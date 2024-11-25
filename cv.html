@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sazib CV</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.15;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4ecd8;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+
+        header .contact-info {
+            font-size: 14px;
+            color: #666;
+        }
+
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 250px;
+            background: #333;
+            color: #fff;
+            height: 100%;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+            display: block;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        nav h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+
+        nav a {
+            display: block;
+            text-decoration: none;
+            color: #fff;
+            margin: 10px 0;
+            padding: 10px;
+            background: #444;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        nav a:hover {
+            background: #555;
+        }
+
+        main {
+            margin-left: 270px;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        section h2 {
+            font-size: 20px;
+            border-bottom: 2px solid #ddd;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+        }
+
+        .sub-section {
+            margin-left: 20px;
+        }
+
+        .sub-section h3 {
+            font-size: 16px;
+            margin-bottom: 2px;
+        }
+
+        .sub-section p {
+            font-size: 14px;
+            margin: 2px 0;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                width: 200px;
+            }
+
+            main {
+                margin-left: 220px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav {
+                position: absolute;
+                width: 100%;
+                display: none;
+                top: 0;
+                left: 0;
+                transform: translateX(-100%);
+            }
+
+            nav.open {
+                display: block;
+                transform: translateX(0);
+            }
+
+            main {
+                margin-left: 0;
+            }
+
+            .toggle-nav {
+                display: block;
+                text-align: center;
+                background: #333;
+                color: #fff;
+                padding: 10px;
+                cursor: pointer;
+                font-size: 20px;
+            }
+        }
+
+        .toggle-nav {
+            display: none;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <nav id="sidebar">
+        <a href="#profile">Personal Profile</a>
+        <a href="#skills">Technical Skills</a>
+        <a href="#core-skill">Core Skills</a>
+        <a href="#experience">Work Experience</a>
+        <a href="#education">Education</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#projects">Projects</a>
+        <a href="#languages">Languages</a>
+    </nav>
+    <div class="toggle-nav" onclick="toggleSidebar()">☰ Menu</div>
+    <main>
+        <div class="container">
+            <header>
+                <h1>Sazib Chowdhury</h1>
+                <p class="contact-info"><span><i class="bi bi-telephone-fill"></i> +8801632960082</span> | <span> <i class="bi bi-envelope-fill"></i> <a href="mailto:sazibc1@gmail.com"> sazibc1@gmail.com</a></span> | <span><i class="bi bi-github"></i> <a href="https://github.com/sazib0" target="_blank">sazib0</a></span> | <span><i class="bi bi-linkedin"></i> <a href="https://www.linkedin.com/in/sazib1/" target="_blank">sazib1</a></span> | <span><i class="bi bi-geo-alt-fill"></i> Dhaka, Bangladesh</span></p>
+            </header>
+            <section id="profile">
+                <h2>Personal Profile</h2>
+                <p>Experienced in driving growth and innovation in a dynamic startup environment. Proficient in Python,
+                    Java, and machine learning, with a proven track record of improving system efficiencies, also
+                    mastered
+                    problem-solving and algorithmic thinking. Skilled in analyzing complex data sets to discover the
+                    trends
+                    and patterns for business decisions. Solution-oriented problem-solving with a strong background in
+                    software development, project management, and cross-functional team collaboration.</p>
+            </section>
+
+            
+            <section id="education">
+                <h2>Education</h2>
+                <div class="sub-section">
+                    <h3>Green University of Bangladesh<span style="float: right; font-size: 13px; font-style: italic;">Dhaka, Bangladesh</span></h3>
+                    <p><strong>BSc in Computer Science & Engineering (result: 2.74 out of 4.00)</strong> <span style="float: right;font-size: 13px; font-style: italic;">Sept 2018 -
+                            Jan 2023</span></p>
+                    <ul>
+                        <li>Courses: Machine Learning, Data Mining, Information System and Design, Web Programming,
+                            Software Engineering, Statistics.</li>
+                    </ul>
+                </div>
+
+            </section>
+
+            <section id="experience">
+                <h2>Work Experience</h2>
+                <div class="sub-section">
+                    <h3>Gikra <span style="float: right; font-size: 13px; font-style: italic;">Dhaka, Bangladesh</span></h3>
+                    <p><strong>Founder</strong> <span style="float: right;font-size: 13px; font-style: italic;">Oct 2024 - Present</span></p>
+                    <p>Primarily focused on IT infrastructure and security design, driving advanced solutions and SaaS
+                        fundamentals.</p>
+                </div>
+                <div class="sub-section">
+                    <h3>TCL Informatix <span style="float: right; font-size: 13px; font-style: italic;">Dhaka, Bangladesh</span></h3>
+                    <p><strong>Asst. Software Engineer</strong> <span style="float: right;font-size: 13px; font-style: italic;">Nov 2023 - Sept 2024</span>
+                    </p>
+                    <ul>
+                        <li>Successfully collaborated with teams to create comprehensive documentation, enhancing
+                            project understanding.</li>
+                        <li>Identified and diagnosed system issues, leading to improved efficiencies through
+                            requirements analysis.</li>
+                        <li>Led UAT & training for ERP and LMS systems involving over 56+ users to ensure functionality
+                            and satisfaction.</li>
+                        <li>Managed business email, web hosting, and domain services for seamless operations.</li>
+                    </ul>
+                    <p><strong>Technical Skills:</strong> Domain/Hosting, User Support & Troubleshooting, Software & Hardware Management.</p>
+                        <p><strong>Soft Skills:</strong> Time Management, Teamwork, Documentation, Report writing, User Training.
+                        </p>
+                </div>
+            </section>
+
+
+            <section id="skills">
+                <h2><strong>Technical </strong>Skills</h2>
+                <p><strong>Programming:</strong> Python, Java, R, JavaScript, SQL, HTML/CSS, Bash.</p>
+                <p><strong>Frameworks:</strong> Rapid Miner, Git, LaTeX, Django, Bootstrap 5, Pandas & OpenCV.</p>
+                <p><strong>Design:</strong> Functional analysis, UI/UX Research, Web Design & Prototyping.</p>
+                <p><strong>Development:</strong> Algorithm Design, Software Implementation, Web Development, UAT, Software Architect.</p>
+                <p><strong>Tools & Platforms:</strong> Tableau, VS Code, PyCharm, Talend DI, AutoCAD, Linux (Debian), BlackArch.</p>
+                <p><strong>Industrial:</strong> Research, Creativity, Administration work, Teamwork, Documentation, Analytical and
+                    logical thinking.</p>
+            </section>
+            <section id="core-skill">
+                <h2>Core Skills</h2>
+                <p><strong>Project Management:</strong> Led cross‑functional teams through the full SDLC, delivering projects on time and within scope.</p>
+                <p><strong>Data Science & Analysis:</strong> Applied ML algorithms to interpret complex data sets, increasing strategic decision‑making
+                efficiency.</p>
+                <p><strong>System & Software:</strong> Conducted thorough system analyses, identifying integration opportunities & improved software.</p>
+                <p><strong>IT Administration:</strong> Infrastructure Management, System Security, Software & Hardware Management.</p>
+            </section>
+
+            <section id="certifications">
+                <h2>Courses & Certifications</h2>
+
+                <div class="sub-section">
+                    <h3>Mastering Data Science and Machine Learning using R <span style="float: right;font-size: 13px; font-style: italic;"><a href="https://github.com/sazib0/dsml" target="_blank">Certificate Link</a>
+                        </span></h3>
+                    <p><strong>BITM,
+                        Dhaka</strong> <span style="float: right;font-size: 13px; font-style: italic;">May 2019
+                        </span></p>
+                    <ul>
+                        <li>Learned advanced visualization and predictive modeling techniques for data analysis.</li>
+                        <li>Gained fundamental knowledge on performing data analysis for business decisions.</li>
+                    </ul>
+                </div>
+                <div class="sub-section">
+                    <h3>Web Design and Development <span style="float: right;font-size: 13px; font-style: italic;"><a href="https://github.com/sazib0/ledp" target="_blank">Certificate Link</a></h3>
+                    <p><strong>ICTD, Dhaka</strong>  <span style="float: right;font-size: 13px; font-style: italic;">Mar 2021</span></p>
+                    <ul>
+                        <li>Mastered pixel-perfect website design and introduced work marketplace concepts.</li>
+                    </ul>
+                </div>
+                <div class="sub-section">
+                    <h3>Machine Learning Specialization <span style="float: right;font-size: 13px; font-style: italic;"><a href="https://coursera.org/share/65ed9170f469bf900fdc64b1afdc500f" target="_blank">Certificate Link</a></span></h3>
+                    <p><strong>Coursera - Online</strong> <span style="float: right;font-size: 13px; font-style: italic;"> Aug 2020</p>
+                    <ul>
+                        <li>Learned foundations of Machine Learning: Regression, Classification, Clustering, and
+                            Retrieval techniques.</li>
+                    </ul>
+                </div>
+                <div class="sub-section">
+                    <h3>Data Science Specialization  <span style="float: right;font-size: 13px; font-style: italic;"><a href="https://coursera.org/share/87e79aeffb72fe09d623ed886170e189" target="_blank">Certificate Link</a></span></h3>
+                    <p><strong>Coursera - Online</strong>  <span style="float: right;font-size: 13px; font-style: italic;">July 2020</p>
+                    <ul>
+                        <li>Acquired skills to manage large datasets, perform visualization, and develop ML algorithms.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="projects">
+                <h2>Projects</h2>
+                <div class="sub-section">
+                    <h3>Open-Source Package: ml-loader 
+                        <span style="float: right; font-size: 13px; font-style: italic;">
+                            <a href="https://pypi.org/project/ml-loader/" target="_blank">PyPI Link</a>
+                        </span>
+                    </h3>
+                    <p><strong>Python Package Development</strong>  
+                        <span style="float: right; font-size: 13px; font-style: italic;">Oct 2024</span>
+                    </p>
+                    <ul>
+                        <li>The package provides functionality for loading data files based on their file extension, making data ingestion easier for users by auto-detecting file types (e.g., CSV, XML).</li>
+                    </ul>
+                    <p><strong>Technical Skill:</strong> Package management.</p>
+                </div>
+                
+                <div class="sub-section">
+                    <h3>Crowdfunding and Investment Management</h3>
+                    <p><strong>Web-based Software</strong>  
+                        <span style="float: right; font-size: 13px; font-style: italic;">Jan 2024</span>
+                    </p>
+                    <ul>
+                        <li>Crowdfunding is the process of raising money from supporters. Internal group of user’s private companies.</li>
+                    </ul>
+                    <p><strong>Technical Skills:</strong> Project Document, Software development.</p>
+                </div>
+                
+                <div class="sub-section">
+                    <h3>Multi-Vendor eCommerce</h3>
+                    <p><strong>Web-based Software</strong>  
+                        <span style="float: right; font-size: 13px; font-style: italic;">Jun 2024</span>
+                    </p>
+                    <ul>
+                        <li>Location-based third-party sellers can join the marketplace to sell their products.</li>
+                    </ul>
+                    <p><strong>Technical Skills:</strong> Project management, Business analysis, Requirement analysis.</p>
+                </div>
+                
+                <div class="sub-section">
+                    <h3>Object Echolocation 
+                        <span style="float: right; font-size: 13px; font-style: italic;">
+                            <a href="https://github.com/sazib0/Object-Echolocation" target="_blank">GitHub Link</a>
+                        </span>
+                    </h3>
+                    <p><strong>Python, PyTorch, NN, OpenCV</strong>  
+                        <span style="float: right; font-size: 13px; font-style: italic;">Aug 2022</span>
+                    </p>
+                    <ul>
+                        <li>Working with Image & Custom data, Bounding box. Aims to Predict Objects Location or Detection.</li>
+                    </ul>
+                    <p><strong>Technical Skills:</strong> Data preparation, Data annotation, ML model preparation.</p>
+                </div>
+                
+                <div class="sub-section">
+                    <h3>Exploring Trends and Anomalies in Construction Financial Data 
+                        <span style="float: right; font-size: 13px; font-style: italic;">
+                            <a href="https://github.com/sazib0/ds" target="_blank">GitHub Link</a>
+                        </span>
+                    </h3>
+                    <p><strong>Python, NN, Pandas</strong>  
+                        <span style="float: right; font-size: 13px; font-style: italic;">Dec 2023</span>
+                    </p>
+                    <ul>
+                        <li>Using techniques like data cleaning, EDA, feature engineering, anomaly detection & ML to provide valuable insights.</li>
+                        <li>Visualization to understand distributions, trends, anomalies & patterns present in financial transaction data.</li>
+                    </ul>
+                    <p><strong>Technical Skills:</strong> Machine Learning, Data analysis.</p>
+                </div>
+            </section>
+
+            <section id="university-projects">
+                <h2>University Projects</h2>
+                <div class="sub-section">
+                    <h3>Web-based To-Let Management System for Students <span style="float: right;font-size: 13px; font-style: italic;"><a href="https://github.com/sazib0/cp" target="_blank">Project Paper</span></a></h3>
+                    <p><strong>Green University of Bangladesh</strong>  <span style="float: right;font-size: 13px; font-style: italic;"> Feb 2022 - Nov 2022</p>
+                        <ul>
+                            <li>To-Let Management System, a platform for listing property rentals for students.</li>
+                            <li>Special Request for property rental.</li>
+                        </ul>
+                        <p><strong>Technical Skills:</strong> Web design and development, Database, git.</p>
+                        <p><strong>Soft Skills:</strong> Time Management, Teamwork, Presentation skills, Report writing.</p>
+                    
+                </div>
+            </section>
+            <section id="others">
+                <h2>Others</h2>
+                <div class="sub-section">
+                    <p><strong>Mentor:</strong> DeepLearning.AI</p>
+                    <p><strong>Blogging:</strong> <a href="https://logibot.blogspot.com/" target="_blank">Blog Site</a></p>
+                </div>
+            </section>
+            <section id="languages">
+                <h2>Languages</h2>
+                    <p><strong>Bengali:</strong> Native Proficiency</li>
+                    <p><strong>English:</strong> Professional Proficiency</li>
+            </section>
+
+        </div>
+    </main>
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('open');
+        }
+    </script>
+</body>
+
+</html>
